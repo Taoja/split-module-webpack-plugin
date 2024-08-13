@@ -79,7 +79,7 @@ function func2 () {}
 /***/ })
 ```
 
-从例子中可以看出，webpack将`utils.js`模块命名为321。但是`splitChunk`有可能会将该模块打包在不同`chunk`中，`usedExports`会将不需要使用的依赖过滤。在单页应用中，321模块的内容会被互相覆盖并最终导致出现问题。
+从例子中可以看出，不同chunk中321模块输出的方法名不同，一个是Ak，另一个是m0，webpack将`utils.js`模块命名为321。但是`splitChunk`有可能会将该模块打包在不同`chunk`中，`usedExports`会将不需要使用的依赖过滤。在单页应用中，321模块的内容会被互相覆盖并最终导致出现问题。
 
  like the example, webpack names the `utils.js` module as 321. However, `splitChunk` may package the module in different `chunks`, and `usedExports` will filter out unnecessary dependencies. In a single-page application, the contents of the 321 module will overwrite each other and eventually cause problems.
 
