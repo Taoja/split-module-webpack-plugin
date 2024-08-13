@@ -1,0 +1,14 @@
+{
+  "name": "split-module-webpack-plugin",
+  "version": "1.0.0",
+  "description": "split webpack module with imported specifier dependencies",
+  "main": "index.js",
+  "author": "",
+  "license": "MIT",
+  "scripts": {
+    "example": "node example/index.js"
+  },
+  "dependencies": {
+    "webpack": "^5.93.0"
+  }
+}

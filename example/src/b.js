@@ -1,0 +1,1 @@
+import('./async/b2.js')
